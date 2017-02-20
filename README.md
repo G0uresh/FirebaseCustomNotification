@@ -3,7 +3,7 @@ The Firebase Cloud Messaging Android Quickstart app demonstrates registering an 
 
 # Getting Start
 - [Add Firebase to your Android Project](https://firebase.google.com/docs/android/setup).
-Run the sample
+- [Run the sample.]
 
 # Sending Notifications
 When the app is in the background and if you send notification using Firebase console then default notification will be    generated which can be different from your custom notification. This happens because onMessageReceived method is not getting call.
@@ -25,6 +25,7 @@ When you install a application a FCM token is printed in logs.
 #### Header
 {
 Content-Type: application/json
+
 Authorization:key= SERVER KEY
 }
 #### payload
@@ -44,6 +45,7 @@ Authorization:key= SERVER KEY
 ## Header
 {
 Content-Type: application/json
+
 Authorization:key= SERVER KEY
 }
 ## payload
@@ -63,7 +65,7 @@ Authorization:key= SERVER KEY
  
  Result
 -----------
-<img src="app/src/screen.png" height="534" width="300"/>
+<img src="app/src/Screenshot.png" height="534" width="300"/>
  
 # Support
 - [Firebase Support](https://firebase.google.com/support/)
