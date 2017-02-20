@@ -3,7 +3,6 @@ The Firebase Cloud Messaging Android Quickstart app demonstrates registering an 
 
 # Getting Start
 - [Add Firebase to your Android Project](https://firebase.google.com/docs/android/setup).
-[Firebase]: https://firebase.google.com/docs/android/setup
 Run the sample
 
 # Sending Notifications
@@ -12,23 +11,23 @@ If you want custom notification (onMessageReceived) method call you should chang
 # Send to a single device
 You can test using REST client 
 
-SERVER KEY
+### SERVER KEY
 1. Go to Firebase console
 2. click the settings icon/cog wheel next to your project name at the top of the new Firebase Console
 3. Click Project settings
 4. Click on the Cloud Messaging tab
 5. The key is right under Server Key
 
-FCM Token
+### FCM Token
 The FirebaseInstanceId.getInstance().getToken() method will give a FCM token.
 When you install a application a FCM token is printed in logs.
 
-Header
+#### Header
 {
 Content-Type: application/json
 Authorization:key= SERVER KEY
 }
-payload
+#### payload
 {
   "to": "FCM Token",
   "priority": "high",
@@ -42,12 +41,12 @@ payload
 }
 
 # Send to a topic
-Header
+## Header
 {
 Content-Type: application/json
 Authorization:key= SERVER KEY
 }
-payload
+## payload
 {
   "to": "/topics/[your topic name]",
   "priority": "high",
@@ -61,6 +60,10 @@ payload
 }
  Topic name example:
  "to": "/topics/games".
+ 
+ Result
+-----------
+<img src="app/src/screen.png" height="534" width="300"/>
  
 # Support
 - [Firebase Support](https://firebase.google.com/support/)
